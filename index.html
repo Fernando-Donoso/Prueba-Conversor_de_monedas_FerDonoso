@@ -4,29 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assests/css/styles.css">
 </head>
 <body>
-    <h1>Conversor de monedas Nacional</h1>
-
-        <div class="card">
-        <label for="monto">Pesos CLP</label>
-        <input id="monto" type="number" placeholder="Ingrese el monto en CLP">
-
-        <label for="moneda">Moneda a convertir:</label>
-        <select id="moneda">
-            <option value="">Seleccione moneda</option>
-            <option value="dolar">Dolar</option>
-            <option value="euro">Euro</option>
-            <option value="uf">UF</option>
-        </select>
-
-        <button id="btnBuscar">Buscar</button>
-
-        <p id="resultado">...</p>
+    <div class="container">
+        <div class="titulo">
+                <h1>Conversor de monedas Nacional</h1>
         </div>
 
-        <canvas id="grafico"></canvas>
+        <div class="card">
+                <div class="peso-clp">
+                    <label for="monto">Pesos CLP</label>
+                </div>
+                <div class="input-monto">
+                    <input id="monto" type="number" placeholder="Ingrese el monto en CLP">
+                </div>
 
+                <div class="moneda-convertir">
+                    <label for="moneda">Moneda a convertir:</label>
+                </div>
+
+                <div class="select-moneda">
+                    <select id="moneda">
+                        <option value="">Seleccione moneda</option>
+                        <option value="dolar">Dolar</option>
+                        <option value="euro">Euro</option>
+                        <option value="uf">UF</option>
+                    </select>
+                </div>
+
+                <div class="boton">
+                    <button id="btnBuscar">Buscar</button>
+                </div>
+
+                <div class="el-resultado">
+                <p id="resultado">...</p>
+                </div>
+        </div>
+
+        <div class="grafico">
+                <canvas id="grafico"></canvas>
+        </div>
+    </div>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="assests/js/script01.js"></script>
 </body>

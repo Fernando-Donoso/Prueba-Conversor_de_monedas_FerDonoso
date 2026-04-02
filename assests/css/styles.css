@@ -55,8 +55,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+#btnBuscar  {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.input-monto input,
+.select-moneda select
+{
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 
 
+#grafico {
+  width: 100%;
+  height: 450px !important;
+}
 
 
+#monto,
+#moneda {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}

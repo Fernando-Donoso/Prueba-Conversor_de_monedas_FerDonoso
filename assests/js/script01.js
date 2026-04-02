@@ -47,7 +47,7 @@ async function renderGrafico(moneda) {
       datasets: [{
         label: `Historial últimos 10 días (${moneda})`,
         data: valores,
-        borderColor: "blue",
+        borderColor: "red",
         borderWidth: 2
       }]
     }
